@@ -1,2 +1,3 @@
 <h2>About Me</h2>
-url: https://edwinbbu.github.io/
+Edwin Babu
+url: https://betterworld.ninja
