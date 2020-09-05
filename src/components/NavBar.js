@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-white shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex flex-row justify-between contents">
+          <div className="contents fixed">
             <div className="flex items-center">
               <p className="text-lg font-bold">Edwin Babu</p>
             </div>
