@@ -5,9 +5,9 @@ export default function Home() {
     <>
       <div className="h-screen w-2/5 bg-blue-200 relative">
         <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
-          <div class="bg-indigo-100 border shadow-lg p-10 w-5/12 h-auto">
-            <div class="flex flex-row justify-center items-center">
-              <div className="flex flex-col bg-blue-100">
+          <div className="bg-indigo-100 border shadow-lg p-12 w-5/12 h-auto">
+            <div className="flex flex-row justify-center items-center">
+              <div className="flex flex-col">
                 <img
                   src="edwin.png"
                   alt="Edwin Babu"
@@ -18,41 +18,43 @@ export default function Home() {
                     marginBottom: 4
                   }}
                 />
-                <h2 className="flex justify-center font-bold">Edwin Babu</h2>
+                <h2 className="flex justify-center font-bold mb-4">
+                  Edwin Babu
+                </h2>
                 <hr />
-                <p className="flex justify-center mb-2">Software Engineer</p>
+                <p className="flex justify-center my-4">SOFTWARE ENGINEER</p>
                 <div className="flex flex-row justify-center">
                   <a
                     target="_blank"
                     href="https://www.facebook.com/edwin.babu.188"
                     className="px-1"
                   >
-                    <i class="ri-facebook-fill ri-xl"></i>
+                    <i className="ri-facebook-fill ri-xl"></i>
                   </a>
                   <a
                     target="_blank"
                     href="https://stackoverflow.com/users/6679159/edwin-babu?tab=profile"
                     className="px-1"
                   >
-                    <i class="ri-stack-overflow-line ri-xl"></i>
+                    <i className="ri-stack-overflow-line ri-xl"></i>
                   </a>
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/edwin-babu-59a62214b"
                     className="px-1"
                   >
-                    <i class="ri-linkedin-fill ri-xl"></i>
+                    <i className="ri-linkedin-fill ri-xl"></i>
                   </a>
                   <a
                     target="_blank"
                     href="https://github.com/edwinbbu"
                     className="px-1"
                   >
-                    <i class="ri-github-fill ri-xl"></i>
+                    <i className="ri-github-fill ri-xl"></i>
                   </a>
                 </div>
               </div>
-              <div className="max-w-sm ml-4">
+              <div className="max-w-sm ml-8">
                 <h1 className="text-6xl font-bold">Hello</h1>
                 <h2 className="text-xl mb-2">Here's who I am & what I do</h2>
                 <div className="flex flex-row justify-start mb-2 ml-6">
@@ -63,11 +65,11 @@ export default function Home() {
                     Projects
                   </button>
                 </div>
-                <p1 className="text-sm text-justify">
+                <p className="text-sm text-justify">
                   Full Stack Developer who leverages the latest technology to
                   build Web applications. Having around 3 years experience and
                   primarily focused on Node and React.
-                </p1>
+                </p>
               </div>
             </div>
           </div>

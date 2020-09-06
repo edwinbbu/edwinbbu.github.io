@@ -1,3 +1,11 @@
 .rounded-xl {
   border-radius: 2rem;
 }
+
+.text-primary {
+  color: #0050ff;
+}
+
+.bg-primary {
+  background-color: #0050ff;
+}
