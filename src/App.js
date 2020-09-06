@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
         {/* <Route exact path="/" component={Experience} /> */}
       </Router>
     </div>
