@@ -18,3 +18,7 @@
 .bg-primary {
   background-color: #0050ff;
 }
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
