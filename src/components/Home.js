@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="h-screen w-2/5 bg-blue-200 relative">
         <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
-          <div className="bg-indigo-100 border shadow-lg p-12 w-5/12 h-auto">
+          <div className="bg-indigo-100 border shadow-lg p-12 w-5/12">
             <div className="flex flex-row justify-center items-center">
               <div className="flex flex-col">
                 <img
@@ -23,36 +23,7 @@ export default function Home() {
                 </h2>
                 <hr />
                 <p className="flex justify-center my-4">SOFTWARE ENGINEER</p>
-                <div className="flex flex-row justify-center">
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/edwin.babu.188"
-                    className="px-1"
-                  >
-                    <i className="ri-facebook-fill ri-xl"></i>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://stackoverflow.com/users/6679159/edwin-babu?tab=profile"
-                    className="px-1"
-                  >
-                    <i className="ri-stack-overflow-line ri-xl"></i>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/edwin-babu-59a62214b"
-                    className="px-1"
-                  >
-                    <i className="ri-linkedin-fill ri-xl"></i>
-                  </a>
-                  <a
-                    target="_blank"
-                    href="https://github.com/edwinbbu"
-                    className="px-1"
-                  >
-                    <i className="ri-github-fill ri-xl"></i>
-                  </a>
-                </div>
+                <SocialLinks />
               </div>
               <div className="max-w-sm ml-8">
                 <h1 className="text-6xl font-bold">Hello</h1>
@@ -78,3 +49,34 @@ export default function Home() {
     </>
   );
 }
+
+const SocialLinks = () => {
+  return (
+    <div className="flex flex-row justify-center">
+      <a
+        target="_blank"
+        href="https://www.facebook.com/edwin.babu.188"
+        className="px-1"
+      >
+        <i className="ri-facebook-fill ri-xl"></i>
+      </a>
+      <a
+        target="_blank"
+        href="https://stackoverflow.com/users/6679159/edwin-babu?tab=profile"
+        className="px-1"
+      >
+        <i className="ri-stack-overflow-line ri-xl"></i>
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/edwin-babu-59a62214b"
+        className="px-1"
+      >
+        <i className="ri-linkedin-fill ri-xl"></i>
+      </a>
+      <a target="_blank" href="https://github.com/edwinbbu" className="px-1">
+        <i className="ri-github-fill ri-xl"></i>
+      </a>
+    </div>
+  );
+};

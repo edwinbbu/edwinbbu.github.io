@@ -9,6 +9,8 @@ export default function Navbar() {
             <div className="flex flex-row items-center">
               <div className="h-4 w-4 bg-primary mr-2"></div>
               <h2 className="text-xl font-bold">Edwin Babu</h2>
+              &nbsp;&nbsp;/&nbsp;&nbsp;
+              <h2 className="text-base">SOFTWARE ENGINEER</h2>
             </div>
             <div className="flex justify-end sm:ml-6 sm:flex">
               <Link
