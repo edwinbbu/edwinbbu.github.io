@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="flex justify-between h-24">
           <div className="contents">
             <div className="flex flex-row items-center">
-              <div className="h-4 w-4 bg-primary mr-2"></div>
+              <div className="h-4 w-4 bg-gray-800 mr-2"></div>
               <h2 className="text-xl font-bold">Edwin Babu</h2>
               &nbsp;&nbsp;/&nbsp;&nbsp;
               <h2 className="text-base">SOFTWARE ENGINEER</h2>
@@ -15,7 +15,7 @@ export default function Navbar() {
             <div className="flex justify-end sm:ml-6 sm:flex">
               <Link
                 to="/"
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-primary focus:outline-none transition duration-150 ease-in-out"
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-black focus:outline-none transition duration-150 ease-in-out"
               >
                 ABOUT ME
               </Link>
