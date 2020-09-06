@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
         <div className="flex justify-between h-24">
-          <div className="contents fixed">
+          <div className="contents">
             <div className="flex flex-row items-center">
               <div className="h-4 w-4 bg-primary mr-2"></div>
               <h2 className="text-xl font-bold">Edwin Babu</h2>
