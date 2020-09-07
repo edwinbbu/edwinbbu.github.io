@@ -2,16 +2,14 @@ import React from "react";
 
 export default function Home() {
   return (
-    <>
-      <div className="h-screen w-2/5 bg-gray-800 relative">
-        <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
-          <div className="flex flex-row justify-center items-center w-5/12 relative">
-            <LeftContents />
-            <RightContents />
-          </div>
+    <div id="home" className="h-screen w-2/5 bg-gray-800 relative">
+      <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
+        <div className="flex flex-row justify-center items-center w-5/12 relative">
+          <LeftContents />
+          <RightContents />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

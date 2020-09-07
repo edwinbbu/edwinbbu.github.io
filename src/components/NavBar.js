@@ -13,18 +13,18 @@ export default function Navbar() {
               <h2 className="text-base">SOFTWARE ENGINEER</h2>
             </div>
             <div className="flex justify-end sm:ml-6 sm:flex">
-              <Link
-                to="/"
+              <a
+                href="#home"
                 className="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-black focus:outline-none transition duration-150 ease-in-out"
               >
                 ABOUT ME
-              </Link>
-              <Link
-                to="/experience"
+              </a>
+              <a
+                href="#experience"
                 className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
               >
                 EXPERIENCE
-              </Link>
+              </a>
               <Link
                 to="/"
                 className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
