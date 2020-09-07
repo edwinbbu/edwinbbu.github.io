@@ -18,7 +18,7 @@ export default function Experience() {
             Working remotely as Software Engineer. <br />
             Leading Project NitroQuiz.
             <br />
-            Team player in NitroHelp UI revamp. Code reviews
+            Team player in NitroHelp UI revamp.
             <br />
             Code Reviews
           </div>

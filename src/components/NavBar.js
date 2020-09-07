@@ -25,18 +25,18 @@ export default function Navbar() {
               >
                 EXPERIENCE
               </a>
-              <Link
-                to="/"
+              {/* <a
+                href="#a"
                 className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
               >
                 PROJECTS
-              </Link>
-              <Link
-                to="/"
+              </a> */}
+              <a
+                href="#hobbies"
                 className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
               >
                 HOBBIES
-              </Link>
+              </a>
             </div>
           </div>
         </div>
