@@ -16,7 +16,11 @@ export default function Experience() {
           </div>
           <div className="flex justify-start items-center ml-4 w-2/3">
             Working remotely as Software Engineer. <br />
-            Leading NitroQuiz and does code reviews.
+            Leading Project NitroQuiz.
+            <br />
+            Team player in NitroHelp UI revamp. Code reviews
+            <br />
+            Code Reviews
           </div>
         </div>
         <div className="flex flex-row bg-gray-200 border rounded-sm shadow-lg w-2/5 h-64 mb-24 p-4">
@@ -36,7 +40,25 @@ export default function Experience() {
             and scaling responses to Elastic Search.
           </div>
         </div>
-        <div className="bg-gray-200 border rounded-sm shadow-lg w-2/5 h-64"></div>
+        <div className="flex flex-row bg-gray-200 border rounded-sm shadow-lg w-2/5 h-64 p-4">
+          <div className="flex flex-col w-1/3 justify-center items-start mb-8">
+            <h1 className="text-2xl text-gray-800">2017 - 2020</h1>
+            <h2 className="text-xl text-black">Programmer Analyst</h2>
+            <h3 className="text-base text-gray-800">Cognizant, Chennai</h3>
+          </div>
+          <div className="flex justify-start items-center ml-4 w-2/3">
+            Build multiple chat-bots and Virtual Assistants using various NLP
+            services like Google Dialogflow, Microsoft Luis, Amazon Alexa and
+            Lex.
+            <br />
+            Build a FAQs Chat Widget for e-commerce Website.
+            <br />
+            Created an Analytics Dashboard for Chat-bot Conversations.
+            <br />
+            Created a FB Chat Widget which handles queries related to airport
+            lounges.
+          </div>
+        </div>
       </div>
     </div>
   );
