@@ -9,7 +9,6 @@ const navLinks = {
 
 export default function Navbar() {
   const [active, setActive] = useState(navLinks.home);
-  console.log("active:", active);
   return (
     <div className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
