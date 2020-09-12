@@ -1,6 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import classnames from "classnames";
+
+const navLinks = {
+  home: "home",
+  experience: "experience",
+  hobbies: "hobbies"
+};
+
 export default function Navbar() {
+  const [active, setActive] = useState(navLinks.home);
+  console.log("active:", active);
   return (
     <div className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
@@ -15,13 +24,24 @@ export default function Navbar() {
             <div className="flex justify-end sm:ml-6 sm:flex">
               <a
                 href="#home"
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-black focus:outline-none transition duration-150 ease-in-out"
+                onClick={() => setActive(navLinks.home)}
+                className={classnames({
+                  "inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
+                  "text-black": active === navLinks.home,
+                  "text-gray-500 hover:text-gray-700": active !== navLinks.home
+                })}
               >
                 ABOUT ME
               </a>
               <a
                 href="#experience"
-                className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
+                onClick={() => setActive(navLinks.experience)}
+                className={classnames({
+                  "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
+                  "text-black": active === navLinks.experience,
+                  "text-gray-500 hover:text-gray-700":
+                    active !== navLinks.experience
+                })}
               >
                 EXPERIENCE
               </a>
@@ -33,7 +53,13 @@ export default function Navbar() {
               </a> */}
               <a
                 href="#hobbies"
-                className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
+                onClick={() => setActive(navLinks.hobbies)}
+                className={classnames({
+                  "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
+                  "text-black": active === navLinks.hobbies,
+                  "text-gray-500 hover:text-gray-700":
+                    active !== navLinks.hobbies
+                })}
               >
                 HOBBIES
               </a>
