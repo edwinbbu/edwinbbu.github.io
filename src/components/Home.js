@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div id="home" className="h-screen w-2/5 bg-gray-800 relative">
+    <div id="home" className="h-screen w-2/5 lg:bg-gray-800 relative">
       <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
-        <div className="flex flex-row justify-center items-center w-5/12 relative">
+        <div className="flex flex-col lg:flex-row justify-center items-center w-5/6 lg:w-5/12 relative">
           <LeftContents />
           <RightContents />
         </div>
@@ -46,20 +46,20 @@ const SocialLinks = () => {
 
 const LeftContents = () => {
   return (
-    <div className="bg-gray-200 border rounded-sm shadow-lg w-2/5">
+    <div className="bg-gray-200 border rounded-sm shadow-lg lg:w-2/5">
       <div className="p-10">
         <div className="flex flex-col items-center justify-start">
           <img
             src="edwin.png"
             alt="Edwin Babu"
-            className="w-48 h-48 object-cover rounded-full mb-8"
+            className="w-48 h-48 object-cover rounded-full mb-2 lg:mb-8"
           />
           <h2 className="flex justify-center text-2xl tracking-wide font-bold mb-2">
             Edwin Babu
           </h2>
           <div style={{ height: 2 }} className="w-12 bg-gray-800"></div>
           <hr />
-          <p className="flex justify-center my-4 font-thin uppercase tracking-widest">
+          <p className="flex justify-center lg:my-4 font-thin uppercase tracking-widest">
             Software Engineer
           </p>
         </div>
@@ -75,7 +75,7 @@ const RightContents = () => {
   };
   return (
     <div className="max-w-sm ml-12">
-      <h1 className="text-6xl font-bold">Hello</h1>
+      <h1 className="text-5xl lg:text-6xl font-bold">Hello</h1>
       <h2 className="text-xl mb-4">Here's who I am & what I do</h2>
       <div className="flex flex-row justify-start mb-4">
         <button

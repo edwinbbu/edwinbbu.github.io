@@ -20,7 +20,7 @@ export default function Navbar() {
               &nbsp;&nbsp;/&nbsp;&nbsp;
               <h2 className="text-base">SOFTWARE ENGINEER</h2>
             </div>
-            <div className="flex justify-end sm:ml-6 sm:flex">
+            <div className="hidden md:flex md:justify-end">
               <a
                 href="#home"
                 onClick={() => setActive(navLinks.home)}
