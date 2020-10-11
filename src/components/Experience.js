@@ -42,7 +42,7 @@ export default function Experience() {
         </div>
         <div className="flex flex-row bg-gray-200 border rounded-sm shadow-lg min-h-64 h-auto p-4 w-full md:w-5/6 lg:w-2/5">
           <div className="flex flex-col w-1/3 justify-center items-start mb-8">
-            <h1 className="text-2xl text-gray-800">2017 - 2020</h1>
+            <h1 className="text-2xl text-gray-800">2017 - 2019</h1>
             <h2 className="text-xl text-black">Programmer Analyst</h2>
             <h3 className="text-base text-gray-800">Cognizant, Chennai</h3>
           </div>

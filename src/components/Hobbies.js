@@ -17,8 +17,8 @@ export default function Experience() {
         </li>
         <li>When forced indoors. I like to play fifa, watch movies.</li>
         <li>
-          I also like to read technical articles to my interest and also likes
-          to write answers in quora.
+          I also like to read technical articles to my interest and is active in
+          quora.
         </li>
       </ul>
     </div>

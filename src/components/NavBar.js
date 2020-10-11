@@ -9,6 +9,13 @@ const navLinks = {
 
 export default function Navbar() {
   const [active, setActive] = useState(navLinks.home);
+  const handleClick = (id) => {
+    setActive(id);
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
   return (
     <div className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
@@ -21,9 +28,8 @@ export default function Navbar() {
               <h2 className="text-base">SOFTWARE ENGINEER</h2>
             </div>
             <div className="hidden md:flex md:justify-end">
-              <a
-                href="#home"
-                onClick={() => setActive(navLinks.home)}
+              <button
+                onClick={() => handleClick(navLinks.home)}
                 className={classnames({
                   "inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
                   "text-black": active === navLinks.home,
@@ -31,10 +37,9 @@ export default function Navbar() {
                 })}
               >
                 ABOUT ME
-              </a>
-              <a
-                href="#experience"
-                onClick={() => setActive(navLinks.experience)}
+              </button>
+              <button
+                onClick={() => handleClick(navLinks.experience)}
                 className={classnames({
                   "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
                   "text-black": active === navLinks.experience,
@@ -43,16 +48,15 @@ export default function Navbar() {
                 })}
               >
                 EXPERIENCE
-              </a>
+              </button>
               {/* <a
                 href="#a"
                 className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
               >
                 PROJECTS
               </a> */}
-              <a
-                href="#hobbies"
-                onClick={() => setActive(navLinks.hobbies)}
+              <button
+                onClick={() => handleClick(navLinks.hobbies)}
                 className={classnames({
                   "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
                   "text-black": active === navLinks.hobbies,
@@ -61,7 +65,7 @@ export default function Navbar() {
                 })}
               >
                 HOBBIES
-              </a>
+              </button>
             </div>
           </div>
         </div>
