@@ -22,7 +22,7 @@ export default function Navbar() {
     if (window.scrollY < 700) {
       setActive(navLinks.home);
     }
-    if (window.scrollY > 700 && window.scrollY < 1400) {
+    if (window.scrollY > 700 && window.scrollY < 1500) {
       setActive(navLinks.experience);
     } else if (window.scrollY > 1400) {
       setActive(navLinks.hobbies);

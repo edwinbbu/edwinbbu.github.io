@@ -78,31 +78,34 @@ const LeftContents = () => {
 };
 
 const RightContents = () => {
-  const navigate = path => {
-    window.location.href = "#" + path;
+  const handleClick = id => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
   };
+
   return (
     <div className="max-w-sm ml-12">
       <h1 className="text-5xl lg:text-6xl font-bold">Hello</h1>
       <h2 className="text-xl mb-4">Here's who I am & what I do</h2>
       <div className="flex flex-row justify-start mb-4">
         <button
-          onClick={() => navigate("experience")}
+          onClick={() => handleClick("experience")}
           className="inline-flex items-center px-2 py-1 border border-transparent text-xs leading-4 font-medium rounded-xl text-white bg-gray-600 hover:bg-gray-900 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
         >
           Experience
         </button>
         <button
-          onClick={() => navigate("hobbies")}
+          onClick={() => handleClick("hobbies")}
           className="ml-4 inline-flex items-center px-2 py-1 border border-black text-xs leading-4 font-medium rounded-xl text-black bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-black active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
         >
           Hobbies
         </button>
       </div>
       <p className="text-justify">
-        Full Stack Developer who leverages the latest technology to build Web
-        applications. Having around 3 years experience and primarily focused on
-        Node and React.
+        An Engineer who loves to builds world class products with 4+ years
+        experience in React, Node and Rails.
       </p>
     </div>
   );

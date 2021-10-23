@@ -15,12 +15,12 @@ export default function Experience() {
             <h3 className="text-base text-gray-800">BigBinary, Remote</h3>
           </div>
           <div className="flex justify-start items-center ml-4 w-2/3">
-            Working remotely as Software Engineer. <br />
-            Leading Project NitroQuiz.
-            <br />
-            Team player in NitroHelp UI revamp.
-            <br />
-            Code Reviews
+            <div>
+              <li>Working remotely as Software Engineer.</li>
+              <li>Leading Project NitroQuiz.</li>
+              <li>Team player in NitroHelp UI revamp.</li>
+              <li>Code Reviews</li>
+            </div>
           </div>
         </div>
         <div className="flex flex-row bg-gray-200 border rounded-sm shadow-lg min-h-64 h-auto mb-24 p-4 w-full md:w-5/6 lg:w-2/5">
@@ -30,14 +30,21 @@ export default function Experience() {
             <h3 className="text-base text-gray-800">SurveySparrow, Kochi</h3>
           </div>
           <div className="flex justify-start items-center ml-4 w-2/3">
-            Built Employee 360 Product from ground up. Build a scalable product
-            where I worked closely with Product Management and was able to
-            execute the requirements quickly. <br />
-            Made SurveySparrow Offline App stable. Available on Play Store and
-            App Store.
-            <br />
-            Team player in NPS development. Worked on NPS integrations, web-hook
-            and scaling responses to Elastic Search.
+            <div>
+              <li>
+                Built Employee 360 Product from ground up. Build a scalable
+                product where I worked closely with Product Management and was
+                able to execute the requirements quickly.
+              </li>
+              <li>
+                Made SurveySparrow Offline App stable. Available on Play Store
+                and App Store.
+              </li>
+              <li>
+                Team player in NPS development. Worked on NPS integrations,
+                web-hook and scaling responses to Elastic Search.
+              </li>
+            </div>
           </div>
         </div>
         <div className="flex flex-row bg-gray-200 border rounded-sm shadow-lg min-h-64 h-auto p-4 w-full md:w-5/6 lg:w-2/5">
@@ -47,16 +54,21 @@ export default function Experience() {
             <h3 className="text-base text-gray-800">Cognizant, Chennai</h3>
           </div>
           <div className="flex justify-start items-center ml-4 w-2/3">
-            Build multiple chat-bots and Virtual Assistants using various NLP
-            services like Google Dialogflow, Microsoft Luis, Amazon Alexa and
-            Lex.
-            <br />
-            Build a FAQs Chat Widget for e-commerce Website.
-            <br />
-            Created an Analytics Dashboard for Chat-bot Conversations.
-            <br />
-            Created a FB Chat Widget which handles queries related to airport
-            lounges.
+            <div>
+              <li>
+                Build multiple chat-bots and Virtual Assistants using various
+                NLP services like Google Dialogflow, Microsoft Luis, Amazon
+                Alexa and Lex.
+              </li>
+              <li>Build a FAQs Chat Widget for e-commerce Website.</li>
+              <li>
+                Created an Analytics Dashboard for Chat-bot Conversations.
+              </li>
+              <li>
+                Created a FB Chat Widget which handles queries related to
+                airport lounges.
+              </li>
+            </div>
           </div>
         </div>
       </div>
