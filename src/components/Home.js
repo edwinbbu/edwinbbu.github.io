@@ -18,6 +18,7 @@ const SocialLinks = () => {
     <div className="flex flex-row justify-center bg-white p-2 pt-4">
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://www.facebook.com/edwin.babu.188"
         className="px-2"
       >
@@ -25,6 +26,7 @@ const SocialLinks = () => {
       </a>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://stackoverflow.com/users/6679159/edwin-babu?tab=profile"
         className="px-2"
       >
@@ -32,12 +34,18 @@ const SocialLinks = () => {
       </a>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://www.linkedin.com/in/edwin-babu-59a62214b"
         className="px-2"
       >
         <i className="ri-linkedin-fill ri-xl"></i>
       </a>
-      <a target="_blank" href="https://github.com/edwinbbu" className="px-2">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/edwinbbu"
+        className="px-2"
+      >
         <i className="ri-github-fill ri-xl"></i>
       </a>
     </div>
@@ -70,7 +78,7 @@ const LeftContents = () => {
 };
 
 const RightContents = () => {
-  const navigate = (path) => {
+  const navigate = path => {
     window.location.href = "#" + path;
   };
   return (
