@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 
 const navLinks = {
@@ -9,13 +9,33 @@ const navLinks = {
 
 export default function Navbar() {
   const [active, setActive] = useState(navLinks.home);
-  const handleClick = (id) => {
+
+  const handleClick = id => {
     setActive(id);
     const element = document.getElementById(id);
     element.scrollIntoView({
       behavior: "smooth"
     });
   };
+
+  const handleScroll = () => {
+    if (window.scrollY < 700) {
+      setActive(navLinks.home);
+    }
+    if (window.scrollY > 700 && window.scrollY < 1400) {
+      setActive(navLinks.experience);
+    } else if (window.scrollY > 1400) {
+      setActive(navLinks.hobbies);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  });
+
   return (
     <div className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
