@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div id="home" className="h-screen w-2/5 lg:bg-gray-800 relative">
       <div className="h-screen w-screen flex flex-row justify-center items-center absolute left-0 top-0">
-        <div className="flex flex-col lg:flex-row justify-center items-center w-5/6 lg:w-5/12 relative">
+        <div className="flex flex-col lg:flex-row justify-center items-center w-5/6 lg:w-1/2 relative">
           <LeftContents />
           <RightContents />
         </div>
@@ -54,7 +54,7 @@ const SocialLinks = () => {
 
 const LeftContents = () => {
   return (
-    <div className="bg-gray-200 border rounded-sm shadow-lg lg:w-2/5">
+    <div className="bg-gray-200 border rounded-sm shadow-lg w-full">
       <div className="p-10">
         <div className="flex flex-col items-center justify-start">
           <img
@@ -78,10 +78,10 @@ const LeftContents = () => {
 };
 
 const RightContents = () => {
-  const handleClick = id => {
+  const handleClick = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
