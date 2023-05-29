@@ -55,7 +55,7 @@ const SocialLinks = () => {
 const LeftContents = () => {
   return (
     <div className="bg-gray-200 border rounded-sm shadow-lg w-full">
-      <div className="p-10">
+      <div className="px-8 py-10">
         <div className="flex flex-col items-center justify-start">
           <img
             src="edwin.png"
@@ -78,34 +78,29 @@ const LeftContents = () => {
 };
 
 const RightContents = () => {
-  const handleClick = (id) => {
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="max-w-sm ml-12">
       <h1 className="text-5xl lg:text-6xl font-bold">Hello</h1>
       <h2 className="text-xl mb-4">Here's who I am & what I do</h2>
       <div className="flex flex-row justify-start mb-4">
         <button
-          onClick={() => handleClick("experience")}
+          onClick={() => {
+            window.open("https://github.com/edwinbbu", "_blank");
+          }}
           className="inline-flex items-center px-2 py-1 border border-transparent text-xs leading-4 font-medium rounded-xl text-white bg-gray-600 hover:bg-gray-900 focus:outline-none focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
         >
-          Experience
+          Projects
         </button>
         <button
-          onClick={() => handleClick("hobbies")}
+          onClick={() => {}}
           className="ml-4 inline-flex items-center px-2 py-1 border border-black text-xs leading-4 font-medium rounded-xl text-black bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-black active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
         >
           Hobbies
         </button>
       </div>
       <p className="text-justify">
-        An Engineer who loves to builds world class products with 4+ years
-        experience in React, Node and Rails.
+        A software engineer who enjoys building world class products with 5+
+        years experience in React, Node and Rails.
       </p>
     </div>
   );

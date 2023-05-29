@@ -1,41 +1,6 @@
-import React, { useState, useEffect } from "react";
-import classnames from "classnames";
-
-const navLinks = {
-  home: "home",
-  experience: "experience",
-  hobbies: "hobbies"
-};
+import React from "react";
 
 export default function Navbar() {
-  const [active, setActive] = useState(navLinks.home);
-
-  const handleClick = id => {
-    setActive(id);
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth"
-    });
-  };
-
-  const handleScroll = () => {
-    if (window.scrollY < 700) {
-      setActive(navLinks.home);
-    }
-    if (window.scrollY > 700 && window.scrollY < 1500) {
-      setActive(navLinks.experience);
-    } else if (window.scrollY > 1400) {
-      setActive(navLinks.hobbies);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  });
-
   return (
     <div className="bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fixed-navbar">
@@ -49,42 +14,20 @@ export default function Navbar() {
             </div>
             <div className="hidden md:flex md:justify-end">
               <button
-                onClick={() => handleClick(navLinks.home)}
-                className={classnames({
-                  "inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
-                  "text-black": active === navLinks.home,
-                  "text-gray-500 hover:text-gray-700": active !== navLinks.home
-                })}
+                onClick={() => {
+                  window.open("https://github.com/edwinbbu", "_blank");
+                }}
+                className="inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out text-gray-500 hover:text-gray-700 uppercase"
               >
-                ABOUT ME
+                Projects
               </button>
               <button
-                onClick={() => handleClick(navLinks.experience)}
-                className={classnames({
-                  "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
-                  "text-black": active === navLinks.experience,
-                  "text-gray-500 hover:text-gray-700":
-                    active !== navLinks.experience
-                })}
+                onClick={() => {
+                  window.open("https://medium.com/@edwinbbu", "_blank");
+                }}
+                className="ml-6 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out uppercase text-gray-500 hover:text-gray-700"
               >
-                EXPERIENCE
-              </button>
-              {/* <a
-                href="#a"
-                className="ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out"
-              >
-                PROJECTS
-              </a> */}
-              <button
-                onClick={() => handleClick(navLinks.hobbies)}
-                className={classnames({
-                  "ml-8 inline-flex items-center px-1 pt-1 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out": true,
-                  "text-black": active === navLinks.hobbies,
-                  "text-gray-500 hover:text-gray-700":
-                    active !== navLinks.hobbies
-                })}
-              >
-                HOBBIES
+                Blog
               </button>
             </div>
           </div>
