@@ -54,7 +54,7 @@ const SocialLinks = () => {
 
 const LeftContents = () => {
   return (
-    <div className="bg-gray-200 border rounded-sm shadow-lg w-full">
+    <div className="bg-gray-200 border rounded-sm shadow-lg w-full max-w-sm">
       <div className="px-8 py-10">
         <div className="flex flex-col items-center justify-start">
           <img
@@ -92,10 +92,12 @@ const RightContents = () => {
           Projects
         </button>
         <button
-          onClick={() => {}}
+          onClick={() => {
+            window.open("https://medium.com/@edwinbbu", "_blank");
+          }}
           className="ml-4 inline-flex items-center px-2 py-1 border border-black text-xs leading-4 font-medium rounded-xl text-black bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-black active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150"
         >
-          Hobbies
+          Blogs
         </button>
       </div>
       <p className="text-justify">
